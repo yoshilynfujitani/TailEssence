@@ -5,13 +5,13 @@ import Filter from "./Components/Filter";
 import Navbar from "./Components/Navbar";
 
 function App() {
-  const [currentItem, setCurrentItem] = useState();
+  const [currentItem, setCurrentItem] = useState("");
 
   const handleCurrentItem = (itemType) => {
     setCurrentItem(itemType);
   };
   return (
-    <main className="h-screen w-screen overflow-clip bg-gradient-to-b from-bg-gradient1 to-bg-gradient2 ">
+    <main className="min-h-screen  bg-gradient-to-b from-bg-gradient1 to-bg-gradient2 ">
       <Navbar />
       <Header />
       <Filter handle={handleCurrentItem} current={currentItem} />

@@ -37,7 +37,7 @@ const Filter = ({ handle, current }) => {
           <div className="absolute   flex flex-col my-1 bg-gray-900 min-w-[80px] rounded-md p-1 space-y-1">
             <button onClick={() => setButtonVal("Button")} className={optionStyle}><IoRadioButtonOnOutline />Button</button>
             <button onClick={() => setButtonVal("Text")} className={optionStyle}><IoText />Text</button>
-            <button onClick={() => setButtonVal("Cards")} className={optionStyle}><PiCardsFill />Cards</button>
+            <button onClick={() => setButtonVal("Card")} className={optionStyle}><PiCardsFill />Cards</button>
           </div> : ""
         }
       </div >
