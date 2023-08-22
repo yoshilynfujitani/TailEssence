@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <section className="text-center px-10 py-20 md:p-32 lg:p-48">
+    <section className="text-center px-10 py-20 md:px-32 md:py-24  lg:px-48 lg:py-40">
       <h1 className="text-4xl font-bold bg-gradient-to-b from-slate-50 to-gray-400 bg-clip-text text-transparent md:text-6xl lg:leading-[80px]">
         Make design and development easier
       </h1>
