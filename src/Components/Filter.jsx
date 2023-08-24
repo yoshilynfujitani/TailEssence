@@ -14,7 +14,7 @@ const Filter = ({ handle, current }) => {
     setIsOpen((e) => !e)
   }
   return (
-    <div className=" px-10 md:px-32 md:py-10 first-letter: lg:px-48 lg:py-0">
+    <div className=" px-10 md:px-32 md:py-10  lg:px-48 lg:py-0">
       {/* <select
         onChange={(e) => handle(e.target.value)}
         className="rounded-md py-2 px-3 bg-gradient-to-b from-[#2c2c2e] via-[#231A29] to-[#100814]  text-white border border-gray-900 font-semibold "
@@ -31,7 +31,7 @@ const Filter = ({ handle, current }) => {
           </option>
         </select> */}
       {/* Mobile */}
-      <div className="">
+      <div className="md:hidden">
         <button className="min-w-[80px] rounded-md py-2 px-3 bg-gradient-to-b from-[#2c2c2e] via-[#231A29] to-[#100814]  text-white border border-gray-900 font-semibold" onClick={() => setIsOpen(e => !e)}> {current ? current : "Choose Here"}</button >
         {isOpen ?
           <div className="absolute   flex flex-col my-1 bg-gray-900 min-w-[80px] rounded-md p-1 space-y-1">
@@ -42,6 +42,11 @@ const Filter = ({ handle, current }) => {
         }
       </div >
       {/* Desktop */}
+      <div className="flex space-x-2">
+        <button onClick={() => setButtonVal("Button")} className={optionStyle}><IoRadioButtonOnOutline />Button</button>
+        <button onClick={() => setButtonVal("Text")} className={optionStyle}><IoText />Text</button>
+        <button onClick={() => setButtonVal("Card")} className={optionStyle}><PiCardsFill />Cards</button>
+      </div>
     </div>
   );
 };
