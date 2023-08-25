@@ -14,7 +14,7 @@ const Filter = ({ handle, current }) => {
     setIsOpen((e) => !e);
   };
   return (
-    <div className=" px-10 md:px-32 md:py-10  lg:px-48 lg:py-0">
+    <div className=" px-5  md:py-10  lg:px-32 lg:py-0">
       {/* <select
         onChange={(e) => handle(e.target.value)}
         className="rounded-md py-2 px-3 bg-gradient-to-b from-[#2c2c2e] via-[#231A29] to-[#100814]  text-white border border-gray-900 font-semibold "
