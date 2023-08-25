@@ -14,7 +14,7 @@ const Filter = ({ handle, current }) => {
     setIsOpen((e) => !e);
   };
   return (
-    <div className=" px-5  md:py-10  lg:px-32 lg:py-0">
+    <div className="z-20 px-5  md:py-10  lg:px-32 lg:py-0">
       {/* <select
         onChange={(e) => handle(e.target.value)}
         className="rounded-md py-2 px-3 bg-gradient-to-b from-[#2c2c2e] via-[#231A29] to-[#100814]  text-white border border-gray-900 font-semibold "
@@ -31,7 +31,7 @@ const Filter = ({ handle, current }) => {
           </option>
         </select> */}
       {/* Mobile */}
-      <div className="md:hidden">
+      <div className="z-40 md:hidden">
         <button
           className="min-w-[80px] rounded-md py-2 px-3 bg-gradient-to-b from-[#2c2c2e] via-[#231A29] to-[#100814]  text-white border border-gray-900 font-semibold"
           onClick={() => setIsOpen((e) => !e)}

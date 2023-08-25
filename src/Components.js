@@ -9,7 +9,12 @@ const Components = [
     id: 4,
     type: "Card",
     Title: "Card 1",
-    Code: "",
+    Code: ` <div class="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="px-4 py-2">
+      <h2 class="text-xl font-semibold text-gray-800">hello</h2>
+      <p class="mt-2 text-gray-600">content</p>
+    </div>
+  </div>`,
   },
   {
     id: 3,

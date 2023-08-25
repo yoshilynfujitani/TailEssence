@@ -14,7 +14,7 @@ const Card = ({ content }) => {
 
   return (
     <div
-      className="relative  transition bg-gradient-to-b from-[#090409] to-[#09010a] rounded-md min-h-[300px] mx-5 md:mx-0 flex flex-col items-center justify-center cursor-pointer "
+      className="relative  z-10 transition bg-gradient-to-b from-[#090409] to-[#09010a] rounded-md min-h-[300px] mx-5 md:mx-0 flex flex-col items-center justify-center cursor-pointer "
       onMouseEnter={() => setInCard(true)}
       onMouseLeave={() => setInCard(false)}
     >
@@ -29,7 +29,7 @@ const Card = ({ content }) => {
             className="absolute py-5 bottom-0  flex items-center justify-center"
           >
             <Link to={`/TailEssence/details/${id}`}>
-              <h1 className="flex items-center space-x-2">
+              <h1 className="flex items-center space-x-2 bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-400 to-purple-600 text-md font-semibold">
                 <BsCode />
                 View Source Code
               </h1>
