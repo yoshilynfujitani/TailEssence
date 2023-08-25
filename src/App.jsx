@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Components/Header";
-import Home from "./Home";
+import Home from "./Pages/Home";
 import Filter from "./Components/Filter";
 import Navbar from "./Components/Navbar";
 import CardContent from "./Components/CardContent";

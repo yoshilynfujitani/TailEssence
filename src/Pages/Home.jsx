@@ -1,5 +1,5 @@
-import Card from "./Components/Card";
-import Components from "./Components";
+import Card from "../Components/Card";
+import Components from "../Components";
 
 const Home = ({ currentItem }) => {
   let filteredComponent;
