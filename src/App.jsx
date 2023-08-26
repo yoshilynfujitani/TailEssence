@@ -15,18 +15,20 @@ function App() {
   return (
     <main className="min-h-screen  bg-gradient-to-b from-bg-gradient1 to-bg-gradient2 ">
       <Navbar />
-      <Header />
-
-      <BrowserRouter>
-        <Filter handle={handleCurrentItem} current={currentItem} />
-        <Routes>
-          <Route
-            path="/TailEssence/"
-            element={<Home currentItem={currentItem} />}
-          />
-          <Route path="/TailEssence/details/:id" element={<CardContent />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="container">
+        {" "}
+        <Header />
+        <BrowserRouter>
+          <Filter handle={handleCurrentItem} current={currentItem} />
+          <Routes>
+            <Route
+              path="/TailEssence/"
+              element={<Home currentItem={currentItem} />}
+            />
+            <Route path="/TailEssence/details/:id" element={<CardContent />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </main>
   );
 }

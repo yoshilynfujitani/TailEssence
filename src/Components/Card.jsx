@@ -14,11 +14,13 @@ const Card = ({ content }) => {
 
   return (
     <div
-      className="relative  z-10 transition bg-gradient-to-b from-[#090409] to-[#09010a] rounded-md min-h-[300px] mx-5 md:mx-0 flex flex-col items-center justify-center cursor-pointer "
+      className="relative  z-10 transition bg-gradient-to-b from-[#090409] to-[#09010a] rounded-md  mx-5 md:mx-0 flex flex-col items-center justify-center cursor-pointer "
       onMouseEnter={() => setInCard(true)}
       onMouseLeave={() => setInCard(false)}
     >
-      <div dangerouslySetInnerHTML={{ __html: sanitizedCode }} />
+      <div className="my-[50px] mx-10">
+        <div dangerouslySetInnerHTML={{ __html: sanitizedCode }} />
+      </div>
       <AnimatePresence>
         {inCard && (
           <motion.div

@@ -13,7 +13,7 @@ const Home = ({ currentItem }) => {
   console.log(currentItem);
 
   return (
-    <div className="text-white py-5 grid gap-2 grid-cols-1 md:grid-cols-3 md:px-32">
+    <div className="text-white py-5 grid gap-2 grid-cols-1 md:grid-cols-3 md:px-20">
       {filteredComponent.map((item) => (
         <Card content={item} key={item.id} />
       ))}
