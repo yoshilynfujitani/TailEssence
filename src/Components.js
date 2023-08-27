@@ -1,3 +1,7 @@
+import card1 from "/card-img.jpg";
+import card2 from "/card-img2.jpg";
+import card3 from "/card-img3.jpg";
+import icon from "/icon.jpg";
 const Components = [
   {
     id: 1,
@@ -11,7 +15,7 @@ const Components = [
     Title: "Card 1",
     Code: `
     <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg ">
-      <img class="w-full max-h-52 object-cover" src="/card-img.jpg" alt="Sunset in the mountains">
+      <img class="w-full max-h-52 object-cover" src=${card1} alt="Sunset in the mountains">
       <div class="px-6 py-4">
         <div class="font-bold text-black  text-xl mb-2">Content Title</div>
         <p class="text-gray-700 text-base">
@@ -19,9 +23,9 @@ const Components = [
         </p>
       </div>
       <div class="px-6 pt-4 pb-2">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#space</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#astronomy</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#aesthetic</span>
       </div>
     </div>
     `,
@@ -37,7 +41,7 @@ const Components = [
     type: "Card",
     Title: "Text 1",
     Code: `<div class="max-w-sm  lg:max-w-[600px] lg:flex">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/card-img2.jpg')" title="Galaxy">
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(${card2})" title="Galaxy">
     </div>
     <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
       <div class="mb-8">
@@ -51,7 +55,7 @@ const Components = [
         <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
       </div>
       <div class="flex items-center">
-        <img class="w-10 h-10 rounded-full object-cover mr-4" src="/icon.jpg" alt="Avatar of YoshiKei">
+        <img class="w-10 h-10 rounded-full object-cover mr-4" src=${icon} alt="Avatar of YoshiKei">
         <div class="text-sm">
           <p class="text-gray-900 leading-none">Yoshikei Fujitani</p>
           <p class="text-gray-600">Aug 18</p>
@@ -62,9 +66,39 @@ const Components = [
   },
   {
     id: 6,
-    type: "Text",
+    type: "Card",
     Title: "Text 1",
-    Code: `<h1 class="bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-400 to-purple-600 text-2xl font-bold">Text Here</h1>`,
+    Code: `<div class="wrapper bg-transparent antialiased text-gray-900">
+    <div>
+        
+        <img src=${card3} alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">    
+        
+     <div class="relative px-4 -mt-16  ">
+       <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="flex items-baseline">
+          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+            New
+          </span>
+          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+        2 baths  &bull; 3 rooms
+      </div>  
+        </div>
+        
+        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
+     
+      <div class="mt-1">
+        $1800
+        <span class="text-gray-600 text-sm">   /wk</span>
+      </div>
+      <div class="mt-4">
+        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+      </div>  
+      </div>
+     </div>
+      
+    </div>
+      </div>`,
   },
 ];
 export default Components;
